@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            border: 2px solid #34495e;
+            padding: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .time-slot {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .subject {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+        }
+        
+        .lunch {
+            background-color: #e8f5e8;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .library {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .free-period {
+            background-color: #f0f0f0;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>UGANDA MARTYRS SENIOR SECONDARY SCHOOL TIMETABLE</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot">9:00-10:00</td>
+                <td class="subject">Math</td>
+                <td class="subject">English</td>
+                <td class="subject">Physics</td>
+                <td class="subject" rowspan="3">Chemistry</td>
+                <td class="subject">History</td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:00-11:00</td>
+                <td class="subject">Math</td>
+                <td class="subject" colspan="2">Computer Lab</td>
+                <td class="subject">Geography</td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:00-12:00</td>
+                <td class="subject">Sports</td>
+                <td class="subject" rowspan="2">Biology</td>
+                <td class="subject">Biology</td>
+                <td class="free-period" rowspan="2">Free Period</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:00-1:00</td>
+                <td class="library">Library</td>
+                <td class="library" colspan="2">Library</td>
+            </tr>
+            <tr>
+                <td class="time-slot">1:00-2:00</td>
+                <td class="lunch" colspan="5">Lunch Break</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
